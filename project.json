@@ -1,0 +1,19 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "careful-notion"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "/2019/"
+    }
+  },
+  "title": "",
+  "description": "",
+  "url": "",
+  "image": "assets/social.jpg",
+  "sheets": ["1PS1AdTWGEewnDejYv69HXaFaEO-UFQahGS1JOQZCjHw"],
+  "embedded": false,
+  "production": false
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+  
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    
+
+  </head>
+  <body>
+    <%= t.include("partials/_nav.html") %>
+    <section class="content text-block" id="projects" style="background-color:black;padding-top:0px;">
+        <header class="splash">
+        <iframe src="./assets/audio/2-seconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+        
+            <div class="headline">
+                <h1  class="opposite hammer">headline</h1>
+                <h1 class="opposite subhead">deck
+                </h1>
+            </div>
+            <div class="fade">
+            <%= t.renderMarkdown(archieml.story.lede) %>
+
+            <div class="aside-text" style="font-size:16px;text-transform: uppercase;text-align:center;">
+            <p><i class="fa fa-headphones" aria-hidden="true"></i> Best experienced with audio</p>
+             <a href="#first">
+                <p><i class="fas fa-chevron-down" style="font-size:24px;"></i></p>
+             </a>
+             </div>
+        
+            </div>
+        </header>     
+        
+        <div id="first" class="constrained" style="color:white;font-size:24px;">
+            <%= t.renderMarkdown(archieml.story.lede2) %>
+            <p class="aside-text" style="font-size:16px;text-transform: uppercase;text-align:center;">SCROLL FOR MORE</p>
+            <p class="aside-text" style="text-align: center;"><i class="fas fa-chevron-down" style="font-size:24px;"></i></p>
+        </div>
+        <div class="byline" style="color:white;">
+        <hr style="width:30%">
+          Story by Lynda V. Mapes |
+          Photographs by Steve Ringman |
+          Videos by Ramon Dompor | Graphics by Emily M. Eng
+          
+          <div class="staff">Seattle Times staff</div>
+          <hr style="width:30%">
+          <div class="date" style="margin-bottom:40px;color:white">Published May 19, 2019</div>
+        </div>
+    
+        
+        <%= t.include("_prerollVideo.html", { file: "2_Sound_MainVideo_loop_3.2.mp4", id: "6027287123001", runtime: "5:20" }) %>
+        
+        <div class="caption">Hydrophones beneath the surface of Puget Sound reveal disturbances to sea life that otherwise go unnoticed. (Ramon Dompor / The Seattle Times)</div>
+
+    </section>
+    <section class="content text-block">
+        
+    </section>
+    <%= t.include("_scrollContent.html") %>
+    <section class="text-block other-features" id="other-features">
+    <section class="constrained">
+        <ul class="aside-text" style="padding-left:0">
+            <h3 style="text-align:center;">CREDITS</h3>
+            <div style="column-count:2;list-style-type: none">
+            <li><strong>Reporter:</strong>  Daniel Gilbert</li>
+            <li><strong>Photographer:</strong>  Steve Ringman</li>
+            <li><strong>Project editor:</strong>  Ray Rivera</li>
+            <li><strong>Photo editor:</strong>  Fred Nelson</li>
+            <li><strong>Video editor:</strong>  Lauren Frohne</li>
+            <li><strong>Graphic artist:</strong>  Emily M. Eng</li>
+            <li><strong>Art director and developer:</strong>  Frank Mina</li>
+            <li><strong>Engagement:</strong>  Jeff Albertson, Gina Cole</li>
+            <li><strong>Project coordinator:</strong>  Laura Gordon</li>
+            </div>
+        </ul>
+    </section>
+    
+    </section>
+    <%= t.include("partials/_dontMiss.html") %>
+
+    <%= t.include("partials/_navBottom.html") %>
+    
+    <script src="app.js" async></script>
+    <script>
+      var data = <%= JSON.stringify(json.echolocation_Sheet1) %>;
+    </script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

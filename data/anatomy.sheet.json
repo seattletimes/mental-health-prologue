@@ -1,0 +1,44 @@
+[
+  {
+    "layer": "_405_BRT",
+    "head": "TYPES OF SOUND",
+    "text": "Killer whales make three different types of sounds: whistles, calls and clicks. Whistles and calls are used for communication, while echolocation clicks help with navigation.",
+    "date": 2024
+  },
+  {
+    "layer": "_522_BRT",
+    "head": "1.",
+    "text": "Breathed air enters the blowhole, goes through the nasal passage and fills the first set of air sacs. During underwater dives a nasal plug closes the nasal passage to the blowhole.",
+    "date": 2024
+  },
+  {
+    "layer": "Ballard",
+    "head": "2.",
+    "text": "Below the top air sacs, in the narrow nasal passage are phonic lips on each side of the blowhole. The whale uses these muscular structures to manipulate air to make vibrations.",
+    "date": 2035
+  },
+  {
+    "layer": "West_Seattle",
+    "head": "3.",
+    "text": "The vibrations pass through the melon, an organ at the front of the whale’s head, made of specialized fats. The whale can focus the vibrations into an acoustic beam it uses to scan its environment, using the melon to point the beam like a flashlight.",
+    "date": 2030
+  },
+  {
+    "layer": "Everett",
+    "head": "4.",
+    "text": "The click bounces off objects in the whale’s path and returns as an echo. These echoes not only describe the distance of an object but also its size, shape, structure, composition, speed and direction. Killer whales can distinguish different species of salmon by “seeing” inside the fish, detecting the size and shape of the salmon’s swim bladder. Orca echolocation abilities are so sensitive and refined, a killer whale can tell a BB pellet from a kernal of corn in the dark at 50 feet away.",
+    "date": 2036
+  },
+  {
+    "layer": "Redmond",
+    "head": "5.",
+    "text": "Echoes enter through the lower jaw where a fat-filled cavity is located.",
+    "date": 2024
+  },
+  {
+    "layer": "Kirkland",
+    "head": "6",
+    "text": "The echoes are conducted to the middle ear, inner ear, and auditory nerve before they finally reach the hearing centers of the brain.",
+    "date": 2041
+  }
+]
