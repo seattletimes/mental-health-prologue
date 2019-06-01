@@ -1,9 +1,5 @@
 [
   {
-    "slide": "image1",
-    "description": "Not enough beds.\n\nFor years, our state’s mental healthcare crisis\nhas revolved around this single fact.\n"
-  },
-  {
     "slide": "image2",
     "description": "Earlier this decade, Washington had the\nthird-highest rate in the nation of adults with a mental illness.\n"
   },
@@ -37,26 +33,35 @@
   },
   {
     "slide": "image10",
-    "description": "The Affordable Care Act expanded Medicaid coverage and mental-health benefits to millions of previously uninsured patients. An executive for Universal Health Services, the nation’s largest operator of psychiatric hospitals, put it this way to financial analysts in 2012: “The opportunity is that as these 30 million or 34 million newly-insured come onto the rolls beginning 2014, they become a potential source of patients, if you will, that we really didn’t have before. So an uninsured patient in 2013 who we might have redirected or helped to place somewhere else, all of a sudden in 2014 becomes eligible for admission at one of our facilities.”"
+    "description": "The Affordable Care Act expanded Medicaid coverage and mental-health benefits to millions of previously uninsured patients. "
   },
   {
-    "slide": "image11",
-    "description": "Since 2013, Washington state has added more than 620,000 residents to Medicaid or the Children’s Health Insurance Program, the biggest increase in the nation after California and New York."
+    "slide": "image11"
   },
   {
-    "slide": "image12",
-    "description": "This expansion has unleashed a flood of federal dollars into Washington state’s coffers for mental health, doubling from 2012 to 2017."
+    "slide": "image12"
   },
   {
-    "slide": "image13",
-    "description": "Meanwhile, state payments to four private psychiatric hospitals nearly tripled over five years, topping $85 million in 2017."
+    "slide": "image13"
   },
   {
     "slide": "image14",
-    "description": "When all the approved psychiatric hospitals open, there will be almost three times as many beds in such facilities as there are in the psychiatric wings of medical hospitals.\n"
+    "description": "Since 2013, Washington state has added more than 620,000 residents to Medicaid or the Children’s Health Insurance Program, the biggest increase in the nation after California and New York."
   },
   {
     "slide": "image15",
+    "description": "This expansion has unleashed a flood of federal dollars into Washington state’s coffers for mental health, doubling from 2012 to 2017."
+  },
+  {
+    "slide": "image16",
+    "description": "Meanwhile, state payments to four private psychiatric hospitals nearly tripled over five years, topping $85 million in 2017."
+  },
+  {
+    "slide": "image17",
+    "description": "When all the approved psychiatric hospitals open, there will be almost three times as many beds in such facilities as there are in the psychiatric wings of medical hospitals.\n"
+  },
+  {
+    "slide": "image18",
     "description": "Will this expansion of psychiatric beds mean patients get better care? Or will it move a mental-health crisis out of public view?\n"
   }
 ]

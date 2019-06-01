@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": "/2019/"
+      "path": ""
     }
   },
   "title": "",
