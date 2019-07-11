@@ -16,7 +16,6 @@
 
           <g id="image5" data-name="Image 5" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image5.jpg" width="100%" height="100%"></g>
 
-
           <g id="image6" data-name="Image 6" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image6.jpg" width="100%" height="100%"></g>
 
           <g id="image7" data-name="Image 7" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image7.jpg" width="100%" height="100%"></g>
@@ -50,17 +49,19 @@
       </div>
 
             
-      <div id="Existing" class="first layer over-text" data-layer="image1">
+      <div id="Existing" class="first layer over-text" data-layer="image1" style="visibility: hidden; max-height: 100px;">
 <!--         <h3 style="text-align:center;">Headline</h3> -->
 <!--         <p>Not enough beds. For years, our state’s mental healthcare crisis has revolved around this single fact.</p>   -->    
       </div>
       
       <% json.slides.forEach(function(stage) { %>
-      <div class="layer" data-layer="<%= stage.slide %>">
-        
-        <p><%= stage.description %></p>
-        
-      </div>
+        <% if (stage.description) { %>
+        <div class="layer" data-layer="<%= stage.slide %>">
+        <% } else { %>
+        <div class="layer" data-layer="<%= stage.slide %>" style="visibility: hidden;">
+        <% } %>
+          <%= stage.description %>
+        </div>
       <% }) %>
       
       </section>
