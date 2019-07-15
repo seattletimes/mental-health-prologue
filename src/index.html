@@ -55,19 +55,18 @@
     <section class="content text-block">
         <h2>Not enough beds</h2>
         <p> For years, our state’s mental healthcare crisis has revolved around this single fact.</p>
-        <p>Scroll down to learn why<br><i class="fas fa-chevron-down" style="font-size:24px;"></i></p>
+        <i class="fas fa-chevron-down" style="font-size:24px;"></i>
     </section>
     <%= t.include("_scrollContent.html") %>
 
     <section class="text-block other-features" id="other-features">
 
-        <section class="summary text-block">
-        <p> Among our findings:  
-            <br>• Private psychiatric hospitals are so understaffed that they often fail to keep both patients and their own employees safe. Some patients with medical needs have gone untreated until their conditions deteriorated – at times to the point of death.
-            <br>• Washington state doesn’t make hospital inspection reports available online, in contrast to many states, leaving the public in the dark about violations. State regulators, eager to preserve inpatient treatment options, haven’t taken an enforcement action against a private psychiatric hospital in more than 13 years.
-            <br>• Patients who check in voluntarily and decide they want to leave must be discharged immediately, according to state law, but are often intimidated into staying or forced to undergo evaluations for involuntary commitment.</p>
-        </section>
-
+        <div class="summary">
+        <h4>Among our findings:</h4>
+            <p>• Private psychiatric hospitals are so understaffed that they often fail to keep both patients and their own employees safe. Some patients with medical needs have gone untreated until their conditions deteriorated – at times to the point of death.
+            <br><br>• Washington state doesn’t make hospital inspection reports available online, in contrast to many states, leaving the public in the dark about violations. State regulators, eager to preserve inpatient treatment options, haven’t taken an enforcement action against a private psychiatric hospital in more than 13 years.
+            <br><br>• Patients who check in voluntarily and decide they want to leave must be discharged immediately, according to state law, but are often intimidated into staying or forced to undergo evaluations for involuntary commitment.</p>
+        </div>
         <%= t.include("partials/_dontMiss.html") %>
         <section class="constrained">
 
