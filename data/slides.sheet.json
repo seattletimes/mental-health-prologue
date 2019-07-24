@@ -16,7 +16,7 @@
     "description": "... and left nearly a quarter of adults with mental illness unable to get the help they needed"
   },
   {
-    "slide": "image7",
+    "slide": "image6-2",
     "description": "Yet one source of mental healthcare has expanded rapidly: private psychiatric hospitals."
   },
   {
@@ -53,6 +53,9 @@
   },
   {
     "slide": "image18",
-    "description": "On paper, this expansion looks like a salve for Washington’s mental-health crisis. But on the inside, these new institutions are failing to live up to their promise, according to an investigation by The Seattle Times."
+    "description": "On paper, this expansion looks like a salve for Washington’s mental-health crisis."
+  },
+  {
+    "slide": "image19"
   }
 ]
