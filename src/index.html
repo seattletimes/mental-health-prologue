@@ -5,67 +5,26 @@
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-    
 
   </head>
   <body>
     <%= t.include("partials/_nav.html") %>
-<!--     <section class="content text-block" id="projects" style="background-color:black;padding-top:0px;">
-        <header class="splash">
-        <iframe src="./assets/audio/2-seconds-of-silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-        
-            <div class="headline">
-                <h1  class="opposite hammer">headline</h1>
-                <h1 class="opposite subhead">deck
-                </h1>
-            </div>
-            <div class="fade">
-
-            <div class="aside-text" style="font-size:16px;text-transform: uppercase;text-align:center;">
-            <p><i class="fa fa-headphones" aria-hidden="true"></i> Best experienced with audio</p>
-             <a href="#first">
-                <p><i class="fas fa-chevron-down" style="font-size:24px;"></i></p>
-             </a>
-             </div>
-        
-            </div>
-        </header>     
-        
-        <div id="first" class="constrained" style="color:white;font-size:24px;">
-            <p class="aside-text" style="font-size:16px;text-transform: uppercase;text-align:center;">SCROLL FOR MORE</p>
-            <p class="aside-text" style="text-align: center;"><i class="fas fa-chevron-down" style="font-size:24px;"></i></p>
-        </div>
-        <div class="byline" style="color:white;">
-        <hr style="width:30%">
-          Story by Lynda V. Mapes |
-          Photographs by Steve Ringman |
-          Videos by Ramon Dompor | Graphics by Emily M. Eng
-          
-          <div class="staff">Seattle Times staff</div>
-          <hr style="width:30%">
-          <div class="date" style="margin-bottom:40px;color:white">Published May 19, 2019</div>
-        </div>
-    
-        
-        
-        <div class="caption">Hydrophones beneath the surface of Puget Sound reveal disturbances to sea life that otherwise go unnoticed. (Ramon Dompor / The Seattle Times)</div>
-
-    </section> -->
 
     <section class="content text-block">
         <h1>PRIVATELY HELD</h1>
+        <div class="content line">
+          <img src="assets/line.jpg"></div>
+        <h2>A Seattle Times Investigation</h2>
+
         <div class="constrained">
-            <div class="title">A SEATTLE TIMES INVESTIGATION
-              </div>
             <img src="assets/sealion.jpg">
               <i class="fas fa-chevron-down" style="font-size:24px;"></i>
 
-              <div class="title">Not enough beds
+              <div class="content">
+                <h3>Not enough beds</h3>
                   <p> For years, our state’s mental healthcare crisis has revolved around this single fact.</p>
               </div>
         </div>
-
-
         
     </section>
     <%= t.include("_scrollContent.html") %>
@@ -90,8 +49,11 @@
         <section class="constrained">
 
             <ul class="aside-text" style="padding-left:0">
-                <h3 style="text-align: center;">CREDITS</h3>
+                <h4 style="text-align: center;">CREDITS</h4>
+                <div class="content line">
+                    <img src="assets/line.jpg"></div>
                     <div style="column-count:2;list-style-type: none">
+                      <li></li>
                         <li><strong>Reporter:</strong>  Daniel Gilbert</li>
                         <li><strong>Project editor:</strong>  Ray Rivera</li>
                         <li><strong>Photographer:</strong>  Erika Schultz</li>
