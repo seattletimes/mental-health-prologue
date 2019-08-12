@@ -304,11 +304,15 @@ nav.main-nav {
   font-size: 17px;
   font-family: @df-sans;
 
+  @media @mobile {
+    display: block;
+  }
+
   .story {
     .flex(0 0 33%);
 
     @media @mobile {
-      .flex(1 1 50%)
+      display: block;
     }
   }
   .padded {
