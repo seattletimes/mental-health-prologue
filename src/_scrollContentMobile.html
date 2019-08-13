@@ -1,0 +1,51 @@
+<section class="text-block project-head">
+      <div class="constrained">
+        
+      </div>
+    </section>
+      <section class="scroll-content">
+      <div class="backdrop">
+        <svg>
+
+          <g id="image1m" data-name="Image 1m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image1.jpg" width="100%" height="100%"></g>
+
+          <g id="image2m" data-name="Image 2m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image2m.jpg" width="100%" height="100%"></g>
+
+          <g id="image4m" data-name="Image 4m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image4m.jpg" width="100%" height="100%"></g>
+          
+          <g id="image6m" data-name="Image 6m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image6m.jpg" width="100%" height="100%"></g>
+          
+          <g id="image6-2m" data-name="Image 6-2m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image6-2m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image16m" data-name="Image 16m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image16m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image72m" data-name="Image 72m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image72m.gif" width="100%" height="100%"></g>                   
+            
+          <g id="image9m" data-name="Image 9m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image9m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image14m" data-name="Image 14m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image14m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image17m" data-name="Image 17m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image17m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image18m" data-name="Image 18m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image18m.jpg" width="100%" height="100%"></g>
+            
+          <g id="image19m" data-name="Image 19m" class="layer" style="position:absolute; top:0; left:0; z-index:0; opacity: 1.0;"><image xlink:href="./assets/photos/image19m.jpg" width="100%" height="100%"></g>
+            
+          <g id="Existing" class="layer" style="position:relative; z-index:12"><image xlink:href="" width="100%" height="100%"></g>
+      </svg>
+      </div>
+
+            
+      <div id="Existing" class="first layer over-text" data-layer="image1m" style="visibility: hidden; max-height: 100px;">    </div>
+      
+      <% json.slidesMobile.forEach(function(stage) { %>
+        <% if (stage.description) { %>
+        <div class="layer" data-layer="<%= stage.slide %>">
+        <% } else { %>
+        <div class="layer" data-layer="<%= stage.slide %>" style="visibility: hidden;">
+        <% } %>
+          <%= stage.description %>
+        </div>
+      <% }) %>
+      
+      </section>

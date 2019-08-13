@@ -26,7 +26,13 @@
         </div>
         
     </section>
-    <%= t.include("_scrollContent.html") %>
+    <div class="hidden-mobile">
+      <%= t.include("_scrollContent.html") %>
+    </div>
+
+    <div class="visible-mobile">
+      <%= t.include("_scrollContentMobile.html") %>
+    </div>
 
     <section class="text-block other-features" id="other-features">
 

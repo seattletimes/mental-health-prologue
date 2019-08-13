@@ -1,12 +1,9 @@
 require("./lib/social");
 require("./lib/ads");
-//require("./bc-preroll");
 
-//require("./lib/comments");
 //var paywall = require("./lib/paywall");
 //setTimeout(() => paywall(11006469), 3000);
-//var track = require("./lib/tracking");
-//require("waypoints/lib/noframework.waypoints");
+
 
 var $ = require("./lib/qsa");
 var debounce = require("./lib/debounce");
@@ -45,24 +42,6 @@ var onScroll = function() {
     }
   }
 }
-
-/*
-var waypoint = new Waypoint({
-  element: document.getElementById('wp-dive0'),
-  handler: function(down) {
-    var audio = document.getElementById('aud0')
-    audio.play()
-  },
-  offset: '40%'
-})
-
-var button0 = document.querySelector("#btn0");
-    button0.addEventListener("click", player0);
-    function player0() {
-        var audio0 = document.querySelector("#aud0");
-        audio0.play();
-    };
-*/
 
 window.addEventListener("scroll", debounce(onScroll, 500));
 onScroll();
