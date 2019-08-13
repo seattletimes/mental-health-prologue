@@ -1,4 +1,18 @@
-.scroll-content {
+  .visible-mobile {
+    display: none !important;
+  }
+  
+  @media @mobile {
+    .visible-mobile {
+      display: inline !important;
+    }
+  
+    .hidden-mobile {
+      display: none !important;
+    }
+  }
+  
+  .scroll-content {
   max-width: 960px;
   margin: auto;
 
@@ -11,8 +25,6 @@
     width: 1000px;
     height: 100%;
     z-index: -1;
-
-
 
     @media (max-width: 1100px) {
       top: 10%;
@@ -59,19 +71,6 @@
 
       image {
         transition: all 1s linear;
-        .visible-mobile {
-          display: none !important;
-        }
-        
-        @media @mobile {
-          .visible-mobile {
-            display: inline !important;
-          }
-        
-          .hidden-mobile {
-            display: none !important;
-          }
-        }
       }
 
       &.zoomed g[id]:not(.activated) {
