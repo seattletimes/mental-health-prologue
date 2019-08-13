@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+  
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <%= t.include("partials/_nav.html") %>
+
+    <section class="content text-block">
+        <h1>PRIVATELY HELD</h1>
+        <div class="content line">
+          <img src="assets/line.jpg"></div>
+        <h2>A Seattle Times Investigation</h2>
+
+        <div class="constrained">
+            <img src="assets/sealion.jpg">
+              <i class="fas fa-chevron-down" style="font-size:24px;"></i>
+
+              <div class="content">
+                <h3>Not enough beds</h3>
+                  <p> For years, our state’s mental healthcare crisis has revolved around this single fact.</p>
+              </div>
+        </div>
+        
+    </section>
+    <%= t.include("_scrollContent.html") %>
+
+    <section class="text-block other-features" id="other-features">
+
+<!--         <div class="summary">
+        <h4>Among our findings:</h4>
+            <p>• Private psychiatric hospitals are so understaffed that they often fail to keep both patients and their own employees safe. Some patients with medical needs have gone untreated until their conditions deteriorated – at times to the point of death.
+            <div class="fade">
+            • Washington state doesn’t make hospital inspection reports available online, in contrast to many states, leaving the public in the dark about violations. State regulators, eager to preserve inpatient treatment options, haven’t taken an enforcement action against a private psychiatric hospital in more than 13 years.
+            </div>
+            <br>
+            <div clas="fade2">
+            • Patients who check in voluntarily and decide they want to leave must be discharged immediately, according to state law, but are often intimidated into staying or forced to undergo evaluations for involuntary commitment.
+            </div>
+        </div> -->
+        <%= t.include("partials/_dontMiss.html") %>
+
+        <div class="sources">Sources and Seattle Times analysis/reporting (in order of appearance): Washington State Institute for Public Policy, Substance Abuse and Mental Health Services Administration, Center for Behavioral Health Statistics and Quality, National Survey on Drug Use and Health; Mental Health America; Washington State Health Care Authority; Department of Health; The Centers for Medicare and Medicaid Services; Department of Health</div>
+
+        <section class="constrained">
+
+            <ul class="aside-text" style="padding-left:0">
+                <h4 style="text-align: center;">CREDITS</h4>
+                <div class="content line">
+                    <img src="assets/line.jpg"></div>
+                    <div style="column-count:2;list-style-type: none">
+                      <li></li>
+                        <li><strong>Reporter:</strong>  Daniel Gilbert</li>
+                        <li><strong>Project editor:</strong>  Ray Rivera</li>
+                        <li><strong>Photographer:</strong>  Erika Schultz</li>
+                        <li><strong>Photo editor:</strong>  Fred Nelson</li>
+                        <li><strong>Video editor:</strong>  Lauren Frohne</li>
+                        <li><strong>Developer and graphic artist:</strong>  Emily M. Eng</li>
+                        <li><strong>Illustrator:</strong>  Gabriel Campanario</li>
+                        <li><strong>Engagement:</strong>  Taylor Blatchford</li>
+                        <li><strong>Project coordinator:</strong>  Laura Gordon</li>
+                    </div>
+            </ul>
+        </section>
+    </section>
+
+    <%= t.include("partials/_navBottom.html") %>
+    
+    <script src="app.js" async></script>
+    <script>
+      var data = <%= JSON.stringify(json.slides.sheet) %>;
+    </script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
