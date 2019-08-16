@@ -15,11 +15,12 @@
         <div class="content line">
           <img src="assets/line.jpg"></div>
         <h2>The hidden costs of the mental-health industry’s expansion</h2>
+        
         <div class="videoWrapper">
-          <video src="assets/videos/prologue.mp4" autoplay playsinline></video>
-        </div>
+            <video src="assets/videos/prologue.mp4" autoplay playsinline></video>
+          </div>
+        
         <div class="constrained">
-          
               <i class="fas fa-chevron-down" style="font-size:24px;"></i>
               <div class="content">
                 <h3>Not enough beds</h3>
@@ -79,7 +80,6 @@
     
     <script src="app.js" async></script>
     <script>
-      var data = <%= JSON.stringify(json.slides.sheet) %>;
     </script>
     <% if (json.project.production) { %>
     <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
