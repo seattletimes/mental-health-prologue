@@ -7,11 +7,6 @@
 @import "seattletimes";
 @import "scroll";
 
-// .content {
-//   padding: 10px;
-
-  
-// }
 
 .videoWrapper {
   position: relative;
@@ -19,36 +14,6 @@
   padding: 10px;
   max-width: 700px;
   margin: 0;
-
-
- .caption {
-  margin: 6px auto 0;
-  max-width: 960px;
-  line-height: 1.2;
-  font-size: 14px;
-  font-style: italic;
-  font-family: @df-sans;
-  color: @df-middle-gray;
-}
-
-@media (max-width:720px) {
-  .caption {
-  margin: 6px 15px 0;
-  }
-  .mediaContainer {
-    display: block;
-  }
-}
-
-.captionLeft {
-  margin: 6px auto 0;
-  max-width: 960px;
-  text-align: right;
-  line-height: 1.2;
-  font-size: 14px;
-  font-style: italic;
-  font-family: @df-sans;
-  color: @df-middle-gray;
 }
 
 .sources {
@@ -63,40 +28,21 @@
   padding: 30px 20px 0px;
 }
 
-.aside {
-    float: right;
-    width: 30%;
-    margin: -15px 0px 20px 20px;
-    font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
-    font-size: 0.8em;
-    padding-left: 16px;
-}
-
-  @media (max-width:720px) {
-    .aside {
-    float:none;
-    width: 100%;
-    margin: 0 auto;
-    padding:0 16px 0;
-    }
-  }
-
 .aside-text {
     width: 100%;
     margin: 0 auto;
     font-family: "ff-dagny-web-pro", Helvetica Neue, Helvetica, sans-serif;
     font-size:0.8em;
     padding-left:16px;
-}
 
-  @media (max-width:720px) {
-    .aside-text {
-    float:none;
-    width:100%;
-    margin: 0 auto;
-    padding:0;
+    @media (max-width:720px) {
+      float:none;
+      width:100%;
+      margin: 0 auto;
+      padding:0;
     }
   }
+  
 
 .text-block {
   text-align: center;
@@ -132,11 +78,6 @@
   font-family: @df-sans;
 }
 
-.source {
-  font-family: @df-sans;
-  font-size: 14px;
-}
-
 .other-features {
   b {
     display: block;
@@ -165,5 +106,4 @@
   max-width: 500px;
   margin: auto;
   padding: 5px 0px 5px 0px;
-}
 }
