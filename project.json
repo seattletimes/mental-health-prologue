@@ -9,11 +9,11 @@
       "path": "2019/public-crisis-private-toll-prologue"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
+  "title": "Public Crisis, Private Toll: A primer on the mental-health crisis in Washington state",
+  "description": "Not enough beds - For years, our state’s mental-health care crisis has revolved around this fact.",
+  "url": "https://projects.seattletimes.com/2019/public-crisis-private-toll-prologue/",
   "image": "assets/social.jpg",
   "sheets": ["1PS1AdTWGEewnDejYv69HXaFaEO-UFQahGS1JOQZCjHw"],
   "embedded": false,
-  "production": false
+  "production": true
 }
